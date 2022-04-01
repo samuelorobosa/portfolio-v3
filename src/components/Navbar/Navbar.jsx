@@ -13,7 +13,7 @@ function Navbar (){
     }
     return(
         <>
-            <nav className="bg-transparent py-10 sm:px-4 dark:bg-gray-800">
+            <nav className="py-10 sm:px-4 dark:bg-gray-800">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link to={'/'} className="flex items-center">
                         <span
