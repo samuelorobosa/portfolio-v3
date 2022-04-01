@@ -1,0 +1,20 @@
+@import "../src/assets/colors.scss";
+
+@font-face {
+  font-family: "LouisGeorgeCafe";
+  src: local("LouisGeorgeCafe"),
+  url("./assets/font/Louis George Cafe.ttf") format("truetype");
+}
+
+
+body{
+  background-color: $main-color;
+  color: $main-text-color;
+  font-family: 'LouisGeorgeCafe', sans-serif !important;
+}
+
+.font-family-epilogue{
+  font-family: 'Epilogue', sans-serif !important;
+}
+
+

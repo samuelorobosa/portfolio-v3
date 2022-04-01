@@ -1,0 +1,59 @@
+@import "../../assets/colors.scss";
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  width: 40px;
+}
+
+.hamburger__bar {
+  height: 2px;
+  background-color: #ffffff;
+  margin: 0.3rem 0;
+  width: 50px;
+  &__small{
+    width: 30px;
+  }
+}
+
+.hamburger--expanded {
+  min-height: 6px;
+}
+
+.hamburger--expanded .hamburger__bar {
+  width: 50px;
+  transition: all ease-in 0.2s, transform ease-in 0.2s;
+}
+
+.hamburger--expanded .hamburger__bar:nth-child(1) {
+  transform: rotate(45deg) translateY(calc(0.3rem + 3px));
+}
+
+.hamburger--expanded .hamburger__bar:nth-child(2) {
+  transform: rotate(-45deg) translateY(calc(-0.3rem - 3px));
+}
+
+.nav-links{
+  font-size: 1.3rem;
+  font-family: 'LouisGeorgeCafe', sans-serif;
+  font-weight: 600;
+  transition: all 500ms;
+  &::after{
+    content: '';
+    display: block;
+    background-color: $main-text-color;
+    width: 0;
+    height: 1px;
+    margin-top: 0.5rem;
+  }
+  &:hover{
+    color: $secondary-text-color;
+    &::after{
+      width: 100%;
+    }
+  }
+
+}

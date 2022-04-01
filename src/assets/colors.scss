@@ -1,0 +1,42 @@
+$main-color: #10101A;
+$main-text-color: #EAE8FF;
+$secondary-text-color: #2D3142;
+$standout-color: #2667FF;
+
+.main-color {
+  color: $main-color;
+}
+
+.main-text-color{
+  color: $main-text-color;
+}
+
+.secondary-text-color{
+  color: $secondary-text-color;
+}
+
+.stand-out-color{
+  color: $standout-color;
+}
+
+.bg-main-color {
+  background-color: $main-color;
+}
+.bg-main-text-color{
+  background-color: $main-text-color;
+}
+
+.bg-secondary-text-color{
+  background-color: $secondary-text-color;
+}
+
+.bg-stand-out-color{
+  background-color: $standout-color;
+}
+
+.hover{
+  &-secondary-text-color:hover {
+    color: $secondary-text-color;
+  }
+
+}
