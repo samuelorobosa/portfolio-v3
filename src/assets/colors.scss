@@ -40,3 +40,10 @@ $standout-color: #2667FF;
   }
 
 }
+
+.hover{
+  &-stand-out-color:hover {
+    color: $standout-color;
+  }
+
+}

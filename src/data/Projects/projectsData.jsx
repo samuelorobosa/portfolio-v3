@@ -4,8 +4,8 @@ export const projectsData = [
         title: "Project 1",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         techUsed: "React, Redux, Node, Express, MongoDB",
-        gitHubLink: "",
-        liveLink: "",
+        gitHubLink: "#",
+        liveLink: "#",
     },
 
     {
@@ -13,8 +13,8 @@ export const projectsData = [
         title: "Project 2",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         techUsed: "React, Redux, Node, Express, MongoDB",
-        gitHubLink: "",
-        liveLink: "",
+        gitHubLink: "#",
+        liveLink: "#",
     },
 
     {
@@ -22,8 +22,8 @@ export const projectsData = [
         title: "Project 2",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         techUsed: "React, Redux, Node, Express, MongoDB",
-        gitHubLink: "",
-        liveLink: "",
+        gitHubLink: "#",
+        liveLink: "#",
     },
 
     {
@@ -31,8 +31,8 @@ export const projectsData = [
         title: "Project 2",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         techUsed: "React, Redux, Node, Express, MongoDB",
-        gitHubLink: "",
-        liveLink: "",
+        gitHubLink: "#",
+        liveLink: "#",
     },
 
     {
@@ -40,8 +40,8 @@ export const projectsData = [
         title: "Project 2",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         techUsed: "React, Redux, Node, Express, MongoDB",
-        gitHubLink: "",
-        liveLink: "",
+        gitHubLink: "#",
+        liveLink: "#",
     },
 
 ]

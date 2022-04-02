@@ -22,7 +22,7 @@ function Navbar (){
                         </span>
                     </Link>
                     <button className={`${showDropdown ? "hamburger hamburger--expanded" : "hamburger"} flex flex-col items-center mr-3 ml-3 md:hidden focus:outline-none dark:text-gray-400`}
-                            aria-controls="mobile-menu" aria-expanded="false"
+                            aria-expanded="false"
                             onClick={toggleDropdown}>
                         <div className="hamburger__bar"/>
                         <div className="hamburger__bar"/>
@@ -31,13 +31,16 @@ function Navbar (){
                         <ul className="flex flex-col content-between text-3xl mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
                                 <Link to={'/projects'}
+                                      onClick={toggleDropdown}
                                       className="nav-links  after:transition-all after:delay-300"
                                       aria-current="page">Projects
+
                                 </Link>
                             </li>
 
                             <li>
-                                <Link to={'/'}
+                                <Link to={'/resume'}
+                                      onClick={toggleDropdown}
                                       className="nav-links after:transition-all after:delay-300"
                                       aria-current="page">Resume
                                 </Link>
@@ -45,6 +48,7 @@ function Navbar (){
 
                             <li>
                                 <Link to={'/'}
+                                      onClick={toggleDropdown}
                                       className="nav-links after:transition-all after:delay-300"
                                       aria-current="page">Contact
                                 </Link>

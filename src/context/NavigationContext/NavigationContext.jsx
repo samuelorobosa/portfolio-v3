@@ -1,4 +1,4 @@
-import {createContext, useReducer} from "react";
+import React,{createContext, useReducer} from "react";
 import NavigationReducer from "./NavigationReducer";
 
 const NavigationContext = createContext();
@@ -10,15 +10,9 @@ export const NavigationProvider = ({children}) => {
     }
     const[state, dispatch] = useReducer(NavigationReducer, initialState);
 
-    const checkLocation = (payload) =>{
-        dispatch({
-            type:"CHECK_PATHNAME",
-            payload
-        })
-    }
 
     return(
-        <NavigationContext.Provider value={{...state, dispatch, checkLocation}}>
+        <NavigationContext.Provider value={{...state, dispatch}}>
             {children}
         </NavigationContext.Provider>
     )

@@ -1,17 +1,21 @@
-import {useContext, useEffect} from "react";
+import {useCallback, useContext, useEffect} from "react";
 import {Link, useLocation} from "react-router-dom";
 import NavigationContext from "../context/NavigationContext/NavigationContext";
 import {socialsData} from "../data/Home/socialsData";
 import {BsArrowUpRight} from "react-icons/bs";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 import {projectsData} from "../data/Projects/projectsData";
 
 const Projects = () => {
     const location = useLocation().pathname
-    const{pathName, checkLocation} = useContext(NavigationContext);
+    const{pathName, dispatch} = useContext(NavigationContext);
 
     useEffect(()=>{
-      checkLocation(location);
-    },[location])
+        dispatch({
+            type:"CHECK_PATHNAME",
+            payload: location
+        })
+    },[dispatch, location])
     return(
         <>
             <ul className="after:content[''] after:mx-auto after:block after:w-px after:h-28 after:bg-white fixed bottom-0 ml-px text-center hidden md:block">
@@ -41,7 +45,11 @@ const Projects = () => {
                 {projectsData.map(({id,title,description,techUsed,gitHubLink,liveLink})=>{
                     return (
                         <div key={id} className="w-full justify-around md:w-1/3 hover:scale-110 transition duration-200 h-1/2 p-3 mx-1 rounded my-1.5 text-left flex flex-col bg-secondary-text-color main-text-color">
-                            <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
+                            <h1 className="font-semibold flex justify-end font-family-epilogue text-xl">
+                                {gitHubLink && <a href={gitHubLink} className='hover-stand-out-color'><FiGithub/></a>}
+                                &nbsp;
+                                {liveLink && <a href={liveLink} className="hover-stand-out-color"><FiExternalLink/></a>}
+                            </h1>
                             <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
                             <p className="text-sm">{description}</p>
                             <p className="text-sm font-mono">{techUsed}</p>
