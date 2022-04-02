@@ -7,7 +7,7 @@ export  const socialsData = [
     },
     {
         id: 2,
-        name: 'LI',
+        name: 'LN',
         url: 'https://www.linkedin.com/in/samuel-amagbakhen/',
         icon: '👜️',
     },
@@ -17,4 +17,11 @@ export  const socialsData = [
         url: 'https://github.com/samuelorobosa',
         icon: '👨🏿‍💻️',
     },
+    {
+        id: 4,
+        name: 'GM',
+        url: 'mailto:amagbakhensamuel@gmail.com',
+        icon: '👜',
+    },
+
 ]

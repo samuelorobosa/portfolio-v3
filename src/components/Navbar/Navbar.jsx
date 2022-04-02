@@ -30,7 +30,7 @@ function Navbar (){
                     <div className={`${showDropdown ? '': 'hidden' } w-full h-screen md:h-full md:block md:w-auto`}>
                         <ul className="flex flex-col content-between text-3xl mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
-                                <Link to={'/'}
+                                <Link to={'/projects'}
                                       className="nav-links  after:transition-all after:delay-300"
                                       aria-current="page">Projects
                                 </Link>
@@ -51,7 +51,7 @@ function Navbar (){
                             </li>
 
                             <li>
-                               <p className="stand-out-color text-3xl mt-4 font-extrabold block md:hidden">Connect with Me</p>
+                               <p className="stand-out-color text-base mt-4 font-extrabold block md:hidden">Connect with Me</p>
                             </li>
                             <li>
                                 <div className="block mt-4 md:hidden">

@@ -9,8 +9,8 @@ function Home() {
         <>
             <Hero />
 
-            <div className="container mt-auto mb-8 flex justify-between items-center">
-                <Link to={'/'}
+            <div className="container mt-auto mb-14 flex justify-between items-center">
+                <Link to={'/projects'}
                       className=
                           "text-2xl pl-2 hover-secondary-text-color block
                           font-extrabold after:content-[''] after:w-20
@@ -22,12 +22,14 @@ function Home() {
 
                 <div className="social-media-icons hidden md:block font-extrabold">
                     {socialsData.map(social => (
-                        <Link className="px-3 inline-block hover-secondary-text-color transition duration-500 ease-in-out"
-                              to={social.url}
-                              key={social.id}>
+                        <a className="px-3 inline-block hover-secondary-text-color transition duration-500 ease-in-out"
+                              href={social.url}
+                              key={social.id}
+                              target="_blank"
+                              rel="noopener noreferrer">
                             {social.icon}{social.name} &nbsp;
                             <BsArrowUpRight className="inline"/>
-                        </Link>
+                        </a>
                     ))
                     }
                 </div>
