@@ -40,10 +40,11 @@ const Projects = () => {
             <div className="flex flex-wrap justify-center px-5 md:px-32 mt-5">
                 {projectsData.map(({id,title,description,techUsed,gitHubLink,liveLink})=>{
                     return (
-                        <div key={id} className="w-full md:w-1/3 hover:scale-110 transition duration-200 h-1/2 p-3 mx-1 rounded my-1.5 text-left flex flex-col bg-secondary-text-color main-text-color">
-                            <h1 className="font-semibold font-family-epilogue text-2xl">{title}</h1>
-                            <p className="text-base">{description}</p>
-                            <p className="text-base">{techUsed}</p>
+                        <div key={id} className="w-full justify-around md:w-1/3 hover:scale-110 transition duration-200 h-1/2 p-3 mx-1 rounded my-1.5 text-left flex flex-col bg-secondary-text-color main-text-color">
+                            <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
+                            <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
+                            <p className="text-sm">{description}</p>
+                            <p className="text-sm font-mono">{techUsed}</p>
                         </div>
                     )
                 })}

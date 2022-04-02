@@ -51,12 +51,12 @@ function Navbar (){
                             </li>
 
                             <li>
-                               <p className="stand-out-color text-base mt-4 font-extrabold block md:hidden">Connect with Me</p>
+                               <p className="stand-out-color text-2xl mt-4 font-extrabold block md:hidden">Connect with Me</p>
                             </li>
                             <li>
                                 <div className="block mt-4 md:hidden">
                                         {socialsData.map(social => (
-                                            <Link className="px-3 inline-block text-xl block hover-secondary-text-color transition duration-500 ease-in-out"
+                                            <Link className="px-3 inline-block text-base block hover-secondary-text-color transition duration-500 ease-in-out"
                                                   to={social.url}
                                                   key={social.id}>
                                                 {social.icon}{social.name} &nbsp;
