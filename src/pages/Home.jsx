@@ -9,7 +9,7 @@ function Home() {
         <>
             <Hero />
 
-            <div className="container mt-auto mb-14 flex justify-between items-center">
+            <div className="container mt-4 flex justify-between items-center">
                 <Link to={'/projects'}
                       className=
                           "text-2xl pl-2 hover-secondary-text-color block
