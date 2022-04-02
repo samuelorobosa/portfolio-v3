@@ -1,4 +1,4 @@
-import {useCallback, useContext, useEffect} from "react";
+import {useContext, useEffect} from "react";
 import {Link, useLocation} from "react-router-dom";
 import NavigationContext from "../context/NavigationContext/NavigationContext";
 import {socialsData} from "../data/Home/socialsData";
