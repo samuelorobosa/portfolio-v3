@@ -49,7 +49,7 @@ function Resume (){
                </div>
                <div className="flex my-1">
                    <p>
-                       Bootstrap, ReactJS, jQuery, TailwindCSS, Laravel Blade Templates
+                       Bootstrap, ReactJS, jQuery, TailwindCSS, Laravel Blade Templates.
                    </p>
                </div>
                <div className="divider">
@@ -134,9 +134,16 @@ function Resume (){
                </div>
                <div className="divider">
                    <p className="font-bold secondary-text-color mr-1">Projects</p>
-                        Links to my works can be found on samuelorobosa.me/projects and more details can be provided upon request.
                    <span/>
                </div>
+               <p className="work flex my-1">
+                   <span>■</span>
+                   <span className="w-1/12"/>
+                   <p> Links to my works can be found on <a className="stand-out-color hover-secondary-text-color" href="https://samuelorobosa.me/projects">samuelorobosa.me/projects </a>
+                       and more details can be provided upon request.
+                   </p>
+
+               </p>
            </div>
        </>
     )
