@@ -47,3 +47,14 @@ $standout-color: #2667FF;
   }
 
 }
+
+.border-main-color{
+  border-color: $main-color;
+}
+
+.border-secondary-color{
+  border-color: $secondary-text-color;
+}
+.border-standout-color{
+  border-color: $standout-color;
+}

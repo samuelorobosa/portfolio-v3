@@ -1,1 +1,17 @@
 @import "../assets/colors.scss";
+
+
+.resume-container{
+  & .divider{
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    & span{
+      background-color: $standout-color;
+      flex-grow: 1;
+      height: 1px;
+    }
+  }
+}
