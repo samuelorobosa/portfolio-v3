@@ -1,4 +1,4 @@
-import {Link, useLocation} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import {useContext, useEffect} from "react";
 import NavigationContext from "../context/NavigationContext/NavigationContext";
 import { ImDownload } from "react-icons/im";
@@ -29,7 +29,7 @@ function Resume (){
            <div className="resume-container p-5 mt-10  w-11/12 md:w-1/2 mx-auto flex flex-col bg-main-color rounded">
                <div className="top_row flex justify-between items-stretch">
                    <h1 className="text-2xl font-semibold font-family-epilogue">{`${name} ${surname}`}</h1>
-                   <a href={Pdf} target="_blank" className="stand-out-color flex items-center"> Download &nbsp;<ImDownload /> </a>
+                   <a href={Pdf} target="_blank" rel="noreferrer" className="stand-out-color flex items-center"> Download &nbsp;<ImDownload /> </a>
                </div>
                <h2 className="text-base stand-out-color">{role}</h2>
                <div className="flex my-7">
