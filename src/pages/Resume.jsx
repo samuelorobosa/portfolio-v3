@@ -1,4 +1,4 @@
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useContext, useEffect} from "react";
 import NavigationContext from "../context/NavigationContext/NavigationContext";
 import { ImDownload } from "react-icons/im";
@@ -98,7 +98,7 @@ function Resume (){
                    <span>■</span>
                    <span className="w-1/12"/>
                    <span>
-                       Links to my works can be found on <a className="stand-out-color hover-secondary-text-color" href="https://samuelorobosa.me/projects">samuelorobosa.me/projects </a>
+                       Links to my works can be found on <Link className="stand-out-color hover-secondary-text-color" to="/projects">samuelorobosa.me/projects </Link>
                        and more details can be provided upon request.
                    </span>
 
