@@ -79,12 +79,12 @@ function Navbar (){
                             <li>
                                 <div className="block mt-4 md:hidden">
                                         {socialsData.map(social => (
-                                            <Link className="px-3 inline-block text-base block hover-secondary-text-color transition duration-500 ease-in-out"
-                                                  to={social.url}
+                                            <a className="px-3 inline-block text-base block hover-secondary-text-color transition duration-500 ease-in-out"
+                                                  href={social.url}
                                                   key={social.id}>
                                                 {social.icon}{social.name} &nbsp;
                                                 <BsArrowUpRight className="inline"/>
-                                            </Link>
+                                            </a>
                                         ))
                                         }
                                 </div>
