@@ -16,7 +16,7 @@ const Projects = () => {
         })
     },[dispatch, location])
     return(
-        <>
+        <div className="flex flex-col projectContainer">
             <SocialSide/>
 
             <h1 className="font-semibold text-2xl  text-center secondary-text-color mb-5">{pathName}</h1>
@@ -30,17 +30,17 @@ const Projects = () => {
                     </p>
             </div>
 
-            <div className="flex flex-wrap justify-center px-5 md:px-32 mt-5">
+            <div className="flex flex-wrap justify-center px-5 md:px-16 mt-5 pb-44">
                 {projectsData.map(({id,title,description,techUsed,gitHubLink,liveLink})=>{
                     return (
-                        <div key={id} className="w-80 justify-around md:w-1/3 hover:scale-110 transition duration-200 h-1/3 p-3 mx-1 rounded my-3.5 text-left flex flex-col bg-secondary-text-color main-text-color">
+                        <div key={id} className="w-80 py-7 justify-around md:w-1/3 hover:scale-110 transition duration-200 h-1/3 p-3 mx-1 rounded my-3.5 text-left flex flex-col bg-secondary-text-color main-text-color">
                             <h1 className="font-semibold flex justify-end font-family-epilogue text-xl">
                                 {gitHubLink && <a href={gitHubLink} className='hover-stand-out-color'><FiGithub/></a>}
                                 &nbsp;
                                 {liveLink && <a href={liveLink} className="hover-stand-out-color"><FiExternalLink/></a>}
                             </h1>
                             <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
-                            <p className="text-sm">{description}</p>
+                            <p className="text-sm mb-8">{description}</p>
                             <p className="text-sm font-mono">{techUsed}</p>
                         </div>
                     )
@@ -49,7 +49,7 @@ const Projects = () => {
 
 
 
-        </>
+        </div>
     )
 }
 

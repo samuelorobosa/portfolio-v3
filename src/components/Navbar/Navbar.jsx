@@ -4,6 +4,7 @@ import './Navbar.scss';
 import {Link} from "react-router-dom";
 import {socialsData} from "../../data/Home/socialsData";
 import {BsArrowUpRight} from "react-icons/bs";
+import { motion } from "framer-motion"
 
 function Navbar (){
     const {showDropdown, dispatch} = useContext(NavigationContext);
@@ -19,7 +20,9 @@ function Navbar (){
         overFlowDocument();
     },[showDropdown,overFlowDocument]);
 
-
+    const variants = {
+        move: { y: 50, opacity: 1, transition: { duration: 0.6}},
+    };
     return(
         <>
             <nav className="bg-main-color py-10 sm:px-4 dark:bg-gray-800">
@@ -36,8 +39,15 @@ function Navbar (){
                         <div className="hamburger__bar"/>
                         <div className="hamburger__bar"/>
                     </button>
-                    <div className={`${showDropdown ? '': 'hidden' } w-full h-screen md:h-full md:block md:w-auto`}>
-                        <ul className="flex flex-col content-between text-3xl mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+
+                    <div
+                    className={`${showDropdown ? '': 'hidden' } w-full h-screen md:h-full md:block md:w-auto`}
+                    >
+                        <motion.ul
+                            variants = {variants}
+                            animate = {showDropdown ? 'move' : ''}
+                            transition={{ type: 'spring' }}
+                            className="flex flex-col content-between text-3xl opacity-0 mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
                                 <Link to={'/projects'}
                                       onClick={toggleDropdown}
@@ -56,11 +66,11 @@ function Navbar (){
                             </li>
 
                             <li>
-                                <Link to={'/'}
+                                <a href={'mailto:amagbakhensamuel@gmail.com'}
                                       onClick={toggleDropdown}
                                       className="nav-links after:transition-all after:delay-300"
                                       aria-current="page">Contact
-                                </Link>
+                                </a>
                             </li>
 
                             <li>
@@ -79,7 +89,7 @@ function Navbar (){
                                         }
                                 </div>
                             </li>
-                        </ul>
+                        </motion.ul>
                     </div>
                 </div>
             </nav>
