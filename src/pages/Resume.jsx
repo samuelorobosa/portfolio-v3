@@ -6,6 +6,7 @@ import './styles.scss'
 import {resumeData} from "../data/Resume/resumeData";
 import { v4 as uuidv4 } from 'uuid';
 import Pdf from "../assets/resume/Resume.pdf";
+import SocialSide from "../components/SocialSide/SocialSide";
 
 function Resume (){
     const location = useLocation().pathname
@@ -20,6 +21,8 @@ function Resume (){
     },[dispatch, location])
     return(
        <>
+           <SocialSide/>
+
            <h1 className="font-semibold text-2xl  text-center secondary-text-color mb-5">{pathName}</h1>
            <h1 className="text-5xl font-extrabold text-center">
                <span className="stand-out-color text-xl inline-block mr-3">03.</span>

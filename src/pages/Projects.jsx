@@ -1,10 +1,9 @@
 import {useContext, useEffect} from "react";
-import {Link, useLocation} from "react-router-dom";
 import NavigationContext from "../context/NavigationContext/NavigationContext";
-import {socialsData} from "../data/Home/socialsData";
-import {BsArrowUpRight} from "react-icons/bs";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import {projectsData} from "../data/Projects/projectsData";
+import SocialSide from "../components/SocialSide/SocialSide";
+import {useLocation} from "react-router-dom";
 
 const Projects = () => {
     const location = useLocation().pathname
@@ -18,18 +17,8 @@ const Projects = () => {
     },[dispatch, location])
     return(
         <>
-            <ul className="after:content[''] after:mx-auto after:block after:w-px after:h-28 after:bg-white fixed bottom-0 ml-px text-center hidden md:block">
-                {socialsData.map(social => (
-                    <li key={social.id} className="hover:-translate-y-2 mb-5 hover:transition transition duration-700 ease-in-out delay-150 font-semibold">
-                        <Link className="px-3 inline-block block hover-secondary-text-color transition duration-500 ease-in-out"
-                          to={social.url}>
-                        {social.icon}{social.name} &nbsp;
-                        <BsArrowUpRight className="inline"/>
-                        </Link>
-                    </li>
-                ))
-                }
-            </ul>
+            <SocialSide/>
+
             <h1 className="font-semibold text-2xl  text-center secondary-text-color mb-5">{pathName}</h1>
               <h1 className="text-5xl font-extrabold text-center">
                   <span className="stand-out-color text-xl inline-block mr-3">02.</span>
