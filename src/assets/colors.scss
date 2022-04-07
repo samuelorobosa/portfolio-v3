@@ -1,6 +1,7 @@
 $main-color: #10101A;
 $main-text-color: #EAE8FF;
 $secondary-text-color: #424861;
+$secondary-text-color-lighter: #6b7292;
 $standout-color: #2667FF;
 
 .main-color {
@@ -13,6 +14,10 @@ $standout-color: #2667FF;
 
 .secondary-text-color{
   color: $secondary-text-color;
+}
+
+.secondary-text-color-lighter{
+  color: $secondary-text-color-lighter;
 }
 
 .stand-out-color{

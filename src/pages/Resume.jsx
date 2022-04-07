@@ -23,7 +23,7 @@ function Resume (){
        <>
            <SocialSide/>
 
-           <h1 className="font-semibold text-2xl  text-center secondary-text-color mb-5">{pathName}</h1>
+           <h1 className="font-semibold text-2xl  text-center secondary-text-color-lighter mb-5">{pathName}</h1>
            <h1 className="text-5xl font-extrabold text-center">
                <span className="stand-out-color text-xl inline-block mr-3">03.</span>
               Take A Peek At My Resume
@@ -43,7 +43,7 @@ function Resume (){
                        return(
                            <div key={index}>
                                <div className="divider">
-                                   <div className="font-bold secondary-text-color mr-1">{title}</div>
+                                   <div className="font-bold secondary-text-color-lighter mr-1">{title}</div>
                                    <span/>
                                </div>
                                <div className="flex my-1">
@@ -61,7 +61,7 @@ function Resume (){
                    })
                }
                <div className="divider">
-                   <p className="font-bold secondary-text-color mr-1">Work Experience</p>
+                   <p className="font-bold secondary-text-color-lighter mr-1">Work Experience</p>
                    <span/>
                </div>
                <div className="experience_wrapper">
@@ -91,14 +91,14 @@ function Resume (){
                    })}
                </div>
                <div className="divider">
-                   <p className="font-bold secondary-text-color mr-1">Projects</p>
+                   <p className="font-bold secondary-text-color-lighter mr-1">Projects</p>
                    <span/>
                </div>
                <p className="work flex my-1">
                    <span>■</span>
                    <span className="w-1/12"/>
                    <span>
-                       Links to my works can be found on <Link className="stand-out-color hover-secondary-text-color" to="/projects">samuelorobosa.me/projects </Link>
+                       Links to my works can be found on <Link className="stand-out-color hover-secondary-text-color-lighter" to="/projects">samuelorobosa.me/projects </Link>
                        and more details can be provided upon request.
                    </span>
 
