@@ -1,5 +1,5 @@
 import NavigationContext from "../../context/NavigationContext/NavigationContext";
-import {useContext} from "react";
+import {useCallback, useContext, useEffect} from "react";
 import './Navbar.scss';
 import {Link} from "react-router-dom";
 import {socialsData} from "../../data/Home/socialsData";
@@ -7,10 +7,19 @@ import {BsArrowUpRight} from "react-icons/bs";
 
 function Navbar (){
     const {showDropdown, dispatch} = useContext(NavigationContext);
-
     const toggleDropdown = () => {
         dispatch({type: 'TOGGLE_DROPDOWN'});
     }
+    const overFlowDocument = useCallback(() => {
+        const body = document.querySelector('body');
+        showDropdown ? body.classList.add('overflow-hidden'):body.classList.remove('overflow-hidden')
+    },[showDropdown]);
+
+    useEffect(() => {
+        overFlowDocument();
+    },[showDropdown,overFlowDocument]);
+
+
     return(
         <>
             <nav className="bg-main-color py-10 sm:px-4 dark:bg-gray-800">
