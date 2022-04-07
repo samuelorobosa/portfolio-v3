@@ -21,7 +21,7 @@ function Navbar (){
     },[showDropdown,overFlowDocument]);
 
     const variants = {
-        move: { y: 50, opacity: 1, transition: { duration: 0.6}},
+        move: { y: 50, transition: { duration: 0.6}},
     };
     return(
         <>
@@ -47,7 +47,7 @@ function Navbar (){
                             variants = {variants}
                             animate = {showDropdown ? 'move' : ''}
                             transition={{ type: 'spring' }}
-                            className="flex flex-col content-between text-3xl opacity-0 mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                            className="flex flex-col content-between text-3xl mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
                                 <Link to={'/projects'}
                                       onClick={toggleDropdown}
