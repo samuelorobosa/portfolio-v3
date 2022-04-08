@@ -15,6 +15,16 @@
     }
   }
 }
+@media(hover: hover){
+  .projectDiv:hover{
+    transform: scale(1.2);
+  }
+  .view-my-projects:hover{
+     &::after{
+       width: 100%;
+     }
+  }
+}
 
 @media(max-width: 515px) {
   .projectContainer{

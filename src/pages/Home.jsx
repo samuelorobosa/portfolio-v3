@@ -14,7 +14,7 @@ function Home() {
                       className=
                           "text-2xl pl-2 hover-secondary-text-color block
                           font-extrabold after:content-[''] after:w-20
-                          after:block after:h-0.5 after:bg-white hover:after:w-full
+                          after:block after:h-0.5 after:bg-white view-my-projects
                           transition duration-500 ease-in-out
                           after:transition-all after:delay-300">
                     View My Projects  &nbsp;  <BsArrowUpRight className="inline"/>

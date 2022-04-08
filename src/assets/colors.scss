@@ -39,20 +39,6 @@ $standout-color: #2667FF;
   background-color: $standout-color;
 }
 
-.hover{
-  &-secondary-text-color:hover {
-    color: $secondary-text-color;
-  }
-
-}
-
-.hover{
-  &-stand-out-color:hover {
-    color: $standout-color;
-  }
-
-}
-
 .border-main-color{
   border-color: $main-color;
 }
@@ -62,4 +48,20 @@ $standout-color: #2667FF;
 }
 .border-standout-color{
   border-color: $standout-color;
+}
+
+@media (hover: hover) {
+  .hover{
+    &-secondary-text-color:hover {
+      color: $secondary-text-color;
+    }
+
+  }
+
+  .hover{
+    &-stand-out-color:hover {
+      color: $standout-color;
+    }
+
+  }
 }
