@@ -5,6 +5,11 @@ const NavigationReducer = (state, action) => {
                 ...state,
                 showDropdown: !state.showDropdown
             }
+        case 'TOGGLE_DROPDOWN_FALSE':
+            return{
+                ...state,
+                showDropdown: false
+            }
         case 'CHECK_PATHNAME':
             return{
                 ...state,

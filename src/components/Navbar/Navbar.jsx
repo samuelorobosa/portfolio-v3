@@ -10,6 +10,9 @@ function Navbar (){
     const toggleDropdown = () => {
         dispatch({type: 'TOGGLE_DROPDOWN'});
     }
+    const toggleDropdownFalse = () => {
+        dispatch({type: 'TOGGLE_DROPDOWN_FALSE'});
+    }
     const overFlowDocument = useCallback(() => {
         const body = document.querySelector('body');
         showDropdown ? body.classList.add('overflow-hidden'):body.classList.remove('overflow-hidden')
@@ -42,7 +45,7 @@ function Navbar (){
                         <ul className="flex flex-col content-between text-3xl mt-4 items-center md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
                                 <Link to={'/projects'}
-                                      onClick={toggleDropdown}
+                                      onClick={toggleDropdownFalse}
                                       className="nav-links  after:transition-all after:delay-300"
                                       aria-current="page">Projects
 
@@ -51,7 +54,7 @@ function Navbar (){
 
                             <li>
                                 <Link to={'/resume'}
-                                      onClick={toggleDropdown}
+                                      onClick={toggleDropdownFalse}
                                       className="nav-links after:transition-all after:delay-300"
                                       aria-current="page">Resume
                                 </Link>
@@ -59,7 +62,7 @@ function Navbar (){
 
                             <li>
                                 <a href={'mailto:amagbakhensamuel@gmail.com'}
-                                      onClick={toggleDropdown}
+                                      onClick={toggleDropdownFalse}
                                       className="nav-links after:transition-all after:delay-300"
                                       aria-current="page">Contact
                                 </a>
