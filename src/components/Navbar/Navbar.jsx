@@ -72,9 +72,9 @@ function Navbar (){
                                <p className="stand-out-color text-2xl mt-4 font-extrabold block md:hidden">Connect with Me</p>
                             </li>
                             <li>
-                                <div className="block mt-4 md:hidden">
+                                <div className="mt-4 md:hidden flex flex-nowrap">
                                         {socialsData.map(social => (
-                                            <a className="px-3 inline-block text-base block hover-secondary-text-color transition duration-500 ease-in-out"
+                                            <a className="px-3  inline-block text-base block hover-secondary-text-color transition duration-500 ease-in-out"
                                                   href={social.url}
                                                   key={social.id}>
                                                 {social.icon}{social.name} &nbsp;
