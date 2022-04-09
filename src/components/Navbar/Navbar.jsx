@@ -61,6 +61,14 @@ function Navbar (){
                             </li>
 
                             <li>
+                                <Link to={'/blog'}
+                                      onClick={toggleDropdownFalse}
+                                      className="nav-links after:transition-all after:delay-300"
+                                      aria-current="page">Blog
+                                </Link>
+                            </li>
+
+                            <li>
                                 <a href={'mailto:amagbakhensamuel@gmail.com'}
                                       onClick={toggleDropdownFalse}
                                       className="nav-links after:transition-all after:delay-300"

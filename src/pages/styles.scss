@@ -15,19 +15,25 @@
     }
   }
 }
+
+.blogDiv{
+  min-height: 200px;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.projectDiv{
+  min-height: 250px;
+}
+
 @media(hover: hover){
-  .projectDiv:hover{
+  .projectDiv:hover,
+  .blogDiv:hover{
     transform: scale(1.05);
   }
   .view-my-projects:hover{
      &::after{
        width: 100%;
      }
-  }
-}
-
-@media(max-width: 515px) {
-  .projectContainer{
-    padding-bottom: 48rem;
   }
 }

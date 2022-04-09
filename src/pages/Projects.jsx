@@ -30,10 +30,10 @@ const Projects = () => {
                     </p>
             </div>
 
-            <div className="flex flex-wrap justify-center px-5 md:px-16 mt-5 pb-44">
+            <div className="flex flex-wrap justify-center px-5 md:px-16 mt-5">
                 {projectsData.map(({id,title,description,techUsed,gitHubLink,liveLink})=>{
                     return (
-                        <div key={id} className="w-80 md:py-1 justify-around md:w-1/3 projectDiv transition duration-200 h-1/3 md:p-3 p-1 mx-1 rounded my-3.5 text-left flex flex-col bg-secondary-text-color main-text-color">
+                        <div key={id} className="flex flex-col justify-between w-80 md:w-1/3 projectDiv transition duration-200 p-4 mx-1 rounded my-3.5 text-left bg-secondary-text-color main-text-color">
                             <h1 className="font-semibold flex duration-500 justify-end font-family-epilogue text-xl">
                                 {gitHubLink && <a href={gitHubLink} className='transition-all hover-stand-out-color mx-2'><FiGithub/></a>}
                                 &nbsp;
