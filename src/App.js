@@ -9,7 +9,6 @@ import Error from "./pages/Error";
 import './assets/font/Louis George Cafe.ttf'
 import Blog from "./pages/Blog";
 import {BlogContextProvider} from "./context/BlogContext/BlogContext";
-import ViewPost from "./pages/ViewPost";
 
 
 
@@ -25,7 +24,6 @@ function App() {
                         <Route path="/projects" element={<Projects/>}/>
                         <Route path="/resume" element={<Resume/>}/>
                         <Route path="/blog" element={<Blog/>}/>
-                        <Route path="/view-post/:id" element={<ViewPost/>}/>
                         <Route path="/*" element={<Error/>}/>
                     </Routes>
                 </BrowserRouter>
