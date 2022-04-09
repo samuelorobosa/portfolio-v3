@@ -20,8 +20,8 @@ const Projects = () => {
             <SocialSide/>
 
             <h1 className="font-semibold text-2xl  text-center secondary-text-color mb-5">{pathName}</h1>
-              <h1 className="text-5xl font-extrabold text-center">
-                  <span className="stand-out-color text-xl inline-block mr-3">02.</span>
+              <h1 className="text-3xl font-extrabold text-center">
+                  <span className="stand-out-color text-base inline-block mr-3">02.</span>
                   Some Projects I've Worked On
               </h1>
             <div className="ml-5 md:ml-28">
@@ -33,14 +33,14 @@ const Projects = () => {
             <div className="flex flex-wrap justify-center px-5 md:px-16 mt-5 pb-44">
                 {projectsData.map(({id,title,description,techUsed,gitHubLink,liveLink})=>{
                     return (
-                        <div key={id} className="w-80 py-7 justify-around md:w-1/3 projectDiv transition duration-200 h-1/3 p-3 mx-1 rounded my-3.5 text-left flex flex-col bg-secondary-text-color main-text-color">
-                            <h1 className="font-semibold flex justify-end font-family-epilogue text-xl">
-                                {gitHubLink && <a href={gitHubLink} className='hover-stand-out-color'><FiGithub/></a>}
+                        <div key={id} className="w-80 md:py-1 justify-around md:w-1/3 projectDiv transition duration-200 h-1/3 md:p-3 p-1 mx-1 rounded my-3.5 text-left flex flex-col bg-secondary-text-color main-text-color">
+                            <h1 className="font-semibold flex duration-500 justify-end font-family-epilogue text-xl">
+                                {gitHubLink && <a href={gitHubLink} className='transition-all hover-stand-out-color mx-2'><FiGithub/></a>}
                                 &nbsp;
-                                {liveLink && <a href={liveLink} className="hover-stand-out-color"><FiExternalLink/></a>}
+                                {liveLink && <a href={liveLink} className="transition-all duration-500 hover-stand-out-color"><FiExternalLink/></a>}
                             </h1>
                             <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
-                            <p className="text-sm mb-8">{description}</p>
+                            <p className="text-sm md:mb-24">{description}</p>
                             <p className="text-sm font-mono">{techUsed}</p>
                         </div>
                     )

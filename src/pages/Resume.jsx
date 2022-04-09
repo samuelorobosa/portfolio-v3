@@ -24,8 +24,8 @@ function Resume (){
            <SocialSide/>
 
            <h1 className="font-semibold text-2xl  text-center secondary-text-color-lighter mb-5">{pathName}</h1>
-           <h1 className="text-5xl font-extrabold text-center">
-               <span className="stand-out-color text-xl inline-block mr-3">03.</span>
+           <h1 className="text-3xl font-extrabold text-center">
+               <span className="stand-out-color text-base inline-block mr-3">03.</span>
               Take A Peek At My Resume
            </h1>
 

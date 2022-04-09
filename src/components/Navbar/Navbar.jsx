@@ -74,10 +74,10 @@ function Navbar (){
                             <li>
                                 <div className="mt-4 md:hidden flex flex-nowrap">
                                         {socialsData.map(social => (
-                                            <a className="px-3  inline-block text-base block hover-secondary-text-color transition duration-500 ease-in-out"
+                                            <a className="px-3  flex flex-nowrap items-center text-base block hover-secondary-text-color transition duration-500 ease-in-out"
                                                   href={social.url}
                                                   key={social.id}>
-                                                {social.icon}{social.name} &nbsp;
+                                                {social.icon}&nbsp;&nbsp;{social.name} &nbsp;
                                                 <BsArrowUpRight className="inline"/>
                                             </a>
                                         ))

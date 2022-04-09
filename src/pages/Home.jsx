@@ -20,14 +20,14 @@ function Home() {
                     View My Projects  &nbsp;  <BsArrowUpRight className="inline"/>
                 </Link>
 
-                <div className="social-media-icons hidden md:block font-extrabold">
+                <div className="social-media-icons md:flex flex-nowrap hidden font-extrabold">
                     {socialsData.map(social => (
-                        <a className="px-3 inline-block hover-secondary-text-color transition duration-500 ease-in-out"
+                        <a className="px-3 flex flex-nowrap items-center hover-secondary-text-color transition duration-500 ease-in-out"
                               href={social.url}
                               key={social.id}
                               target="_blank"
                               rel="noopener noreferrer">
-                            {social.icon}{social.name} &nbsp;
+                            {social.icon}&nbsp;&nbsp;{social.name} &nbsp;
                             <BsArrowUpRight className="inline"/>
                         </a>
                     ))
