@@ -3,7 +3,6 @@ import NavigationContext from "../context/NavigationContext/NavigationContext";
 import SocialSide from "../components/SocialSide/SocialSide";
 import {useLocation} from "react-router-dom";
 import BlogData from "../data/Blog/BlogData";
-import {ImSpinner9} from "react-icons/im";
 
 
 const Blog = () => {
