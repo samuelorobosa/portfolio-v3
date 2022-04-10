@@ -23,7 +23,7 @@ function BlogData(){
     }, [dispatch]);
 
     return(
-        <div className="flex flex-wrap items-stretch justify-center px-5 md:px-16 mt-5 pb-44">
+        <div className="blogDivContainer px-5 md:px-24 mt-5 pb-44">
             <ImSpinner9 className={`animate-spin text-5xl stand-out-color ${loading ? "":"hidden"}`}/>
             {blogs.map(({id,title,published_at,tags,canonical_url})=>{
                 const convertedDate = new Date(published_at).toLocaleDateString(undefined,{
@@ -33,7 +33,7 @@ function BlogData(){
                 });
                 return (
                     <>
-                        <div key={id} className="flex flex-col justify-between w-80 md:w-1/3 blogDiv opacity-0 p-4 mx-1 rounded my-3.5 text-left bg-secondary-text-color main-text-color">
+                        <div key={id} className="flex flex-col justify-between w-full blogDiv opacity-0 p-4 mx-1 rounded my-3.5 text-left bg-secondary-text-color main-text-color">
                             <div>
                                 <h1 className="font-semibold font-family-epilogue text-lg">{title}</h1>
                                 <p className="text-sm">{convertedDate}</p>
