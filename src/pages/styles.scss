@@ -33,6 +33,10 @@
   justify-items: center;
 }
 
+.loadingIcon{
+  transform: translateX(-50%);
+}
+
 @media (max-width: 993px) {
   .blogDivContainer{
     grid-template-columns: repeat(2,1fr);
