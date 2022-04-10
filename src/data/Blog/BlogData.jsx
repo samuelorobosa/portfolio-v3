@@ -24,7 +24,7 @@ function BlogData(){
 
     return(
         <div className="blogDivContainer px-5 md:px-24 mt-5 pb-44">
-            <ImSpinner9 className={`absolute top-60 loadingIcon animate-spin text-5xl stand-out-color ${loading ? "":"hidden"}`}/>
+            <ImSpinner9 className={`absolute loadingIcon text-5xl stand-out-color ${loading ? '':'hidden'}`}/>
             {blogs.map(({id,title,published_at,tags,canonical_url})=>{
                 const convertedDate = new Date(published_at).toLocaleDateString(undefined,{
                     day: 'numeric',
