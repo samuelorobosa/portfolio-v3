@@ -19,7 +19,7 @@ export const resumeData = {
             {
                 id: uuidv4(),
                 title: "Tools and Platforms",
-                data: ["Git/GitHub/BitBucket", "Jira", "WordPress", "Vercel", "Netlify", "Confluence"]
+                data: ["Git/GitHub/BitBucket", "PhpStorm", "Jira", "WordPress", "Vercel", "Netlify", "Confluence"]
             },
             {
                 id: uuidv4(),
