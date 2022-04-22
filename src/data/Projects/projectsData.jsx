@@ -43,13 +43,13 @@ export const projectsData = [
         liveLink: "https://ti-interview-task.netlify.app/",
     },
 
-    // {
-    //     id: 6,
-    //     title: "Project 2",
-    //     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-    //     techUsed: "React, Redux, Node, Express, MongoDB",
-    //     gitHubLink: "#",
-    //     liveLink: "#",
-    // },
+    {
+        id: 5,
+        title: "Fylo",
+        description: "Landing page for a cloud storage service.",
+        techUsed: "HTML5/CSS3, Bootstrap",
+        gitHubLink: "https://github.com/samuelorobosa/hr-work-jnr",
+        liveLink: "https://github.com/samuelorobosa/fyro",
+    },
 
 ]
