@@ -31,7 +31,7 @@ export const resumeData = {
             {
                 jobTitle: "Frontend Developer",
                 company: "Edo State Skills Development Agency",
-                startDate: "May 2020",
+                startDate: "May 2021",
                 endDate:  "July 2021", //leave blank if still working
                 workDone: [
                     "Implemented component-based coding pattern using ReactJs in order to improve page speed and load time",
