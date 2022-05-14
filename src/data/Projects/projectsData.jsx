@@ -1,6 +1,14 @@
 export const projectsData = [
     {
         id: 1,
+        title: "Niffy's Marketplace",
+        description: "An NFT Landing Page.",
+        techUsed: "React, TailwindCSS, GSAP, Vercel",
+        gitHubLink: "https://github.com/samuelorobosa/niffy-marketplace",
+        liveLink: "https://niffys-marketplace.vercel.app/",
+    },
+    {
+        id: 2,
         title: "SamuelOrobosa.me",
         description: "My Personal Website.",
         techUsed: "React, TailwindCSS, Framer Motion",
@@ -8,7 +16,7 @@ export const projectsData = [
         liveLink: "https://samuelorobosa.me/",
     },
     {
-        id: 2,
+        id: 3,
         title: "GitHub Profile Overview",
         description: "GitHub Profile Search UI and Functionality.",
         techUsed: "HTML5/CSS3/JavaScript, Bootstrap, GitHub API",
@@ -17,7 +25,7 @@ export const projectsData = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Continent Search",
         description: "Continents and Countries Search UI and Functionality.",
         techUsed: "HTML5/CSS3/JavaScript, Bootstrap, Open Country API",
@@ -26,7 +34,7 @@ export const projectsData = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "Orna's Form",
         description: "Form UI template with error placeholders, validation, alerts and smooth animations.",
         techUsed: "HTML5/CSS3/JavaScript, jQuery, Parsley.js",
@@ -35,21 +43,12 @@ export const projectsData = [
     },
 
     {
-        id: 5,
-        title: "HR Work",
-        description: "A hiring company's landing page.",
-        techUsed: "HTML5/CSS3, Bootstrap",
-        gitHubLink: "https://github.com/samuelorobosa/hr-work-jnr",
-        liveLink: "https://ti-interview-task.netlify.app/",
-    },
-
-    {
-        id: 5,
+        id: 6,
         title: "Fylo",
         description: "Landing page for a cloud storage service.",
         techUsed: "HTML5/CSS3, Bootstrap",
-        gitHubLink: "https://github.com/samuelorobosa/hr-work-jnr",
-        liveLink: "https://github.com/samuelorobosa/fyro",
+        gitHubLink: "https://github.com/samuelorobosa/fyro",
+        liveLink: "https://fylo-landings.netlify.app/",
     },
 
 ]

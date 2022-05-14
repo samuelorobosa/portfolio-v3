@@ -35,9 +35,9 @@ const Projects = () => {
                     return (
                         <div key={id} className="flex flex-col justify-between w-80 md:w-1/3 projectDiv transition duration-200 p-4 mx-1 rounded my-3.5 text-left bg-secondary-text-color main-text-color">
                             <h1 className="font-semibold flex duration-500 justify-end font-family-epilogue text-xl">
-                                {gitHubLink && <a href={gitHubLink} className='transition-all hover-stand-out-color mx-2'><FiGithub/></a>}
+                                {gitHubLink && <a target="_blank" rel="noreferrer" href={gitHubLink} className='transition-all hover-stand-out-color mx-2'><FiGithub/></a>}
                                 &nbsp;
-                                {liveLink && <a href={liveLink} className="transition-all duration-500 hover-stand-out-color"><FiExternalLink/></a>}
+                                {liveLink && <a target="_blank" rel="noreferrer" href={liveLink} className="transition-all duration-500 hover-stand-out-color"><FiExternalLink/></a>}
                             </h1>
                             <h1 className="font-semibold font-family-epilogue text-xl">{title}</h1>
                             <p className="text-sm md:mb-24">{description}</p>
