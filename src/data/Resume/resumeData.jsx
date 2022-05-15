@@ -14,7 +14,7 @@ export const resumeData = {
             {
                 id: uuidv4(),
                 title: "Libraries and Frameworks",
-                data: ["Bootstrap", "ReactJS", "jQuery", "TailwindCSS", "Laravel Blade Templates"]
+                data: ["Bootstrap", "ReactJS", "jQuery", "TailwindCSS", "Laravel Blade Templates","GSAP", "Framer Motion"]
             },
             {
                 id: uuidv4(),

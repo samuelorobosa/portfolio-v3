@@ -3,7 +3,7 @@ export const projectsData = [
         id: 1,
         title: "Niffy's Marketplace",
         description: "An NFT Landing Page.",
-        techUsed: "React, TailwindCSS, GSAP, Vercel",
+        techUsed: "React, TailwindCSS, SCSS GSAP, Vercel",
         gitHubLink: "https://github.com/samuelorobosa/niffy-marketplace",
         liveLink: "https://niffys-marketplace.vercel.app/",
     },
